@@ -9,12 +9,12 @@
                 Console.WriteLine();
                 Console.WriteLine("SOMMA INTERO");
                 Console.WriteLine("Inserisci il primo numero intero: ");
-                int numero_uno = Convert.ToInt32(Console.ReadLine());
+                int numero_uno_int = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Inserisci il secondo numero intero: ");
-                int numero_due = Convert.ToInt32(Console.ReadLine());
+                int numero_due_int = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine($"La somma tra {numero_uno} e {numero_due} è : {CalcoliHelper.Somma(numero_uno, numero_due)}");
+                Console.WriteLine($"La somma tra {numero_uno_int} e {numero_due_int} è : {CalcoliHelper.Somma(numero_uno_int, numero_due_int)}");
             }
 
 
@@ -23,12 +23,12 @@
                 Console.WriteLine();
                 Console.WriteLine("SOMMA DOUBLE");
                 Console.WriteLine("Inserisci il primo numero double: ");
-                double numero_uno = Convert.ToDouble(Console.ReadLine());
+                double numero_uno_double = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine("Inserisci il secondo numero double: ");
-                double numero_due = Convert.ToDouble(Console.ReadLine());
+                double numero_due_double = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine($"La somma tra {numero_uno} e {numero_due} è : {CalcoliHelper.Somma(numero_uno, numero_due)}");
+                Console.WriteLine($"La somma tra {numero_uno_double} e {numero_due_double} è : {CalcoliHelper.Somma(numero_uno_double, numero_due_double)}");
 
             }
 
@@ -40,9 +40,9 @@
                 int numero_uno_int = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Inserisci il secondo numero intero: ");
-                int numero_due_int = Convert.ToInt32(Console.ReadLine());
+                int numero_due_double = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine($"La differenza tra {numero_uno_int} e {numero_due_int} è: {CalcoliHelper.Differenza(numero_uno_int, numero_due_int)}");
+                Console.WriteLine($"La differenza tra {numero_uno_int} e {numero_due_double} è: {CalcoliHelper.Differenza(numero_uno_int, numero_due_double)}");
             }
 
             {
