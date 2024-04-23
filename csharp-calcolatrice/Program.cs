@@ -15,12 +15,17 @@
                 Console.WriteLine("4. VALORE ASSOLUTO");
                 Console.WriteLine("5. MINIMO");
                 Console.WriteLine("6. MASSIMO");
+                Console.WriteLine("7. ELEVAMENTO A POTENZA");
                 Console.WriteLine("esci. Esci dal programma");
 
                 input = Console.ReadLine();
 
-                if (input == "1")
-
+                if (input == "esci")
+                {
+                    Console.WriteLine("Ciao!");
+                    break; 
+                }
+                else if (input == "1")
                 {
                     // SOMMA INTERO
                     Console.WriteLine();
@@ -176,6 +181,21 @@
 
                     Console.WriteLine($"Il massimo tra {numero_uno_double} e {numero_due_double} è: {CalcoliHelper.Massimo(numero_uno_double, numero_due_double)}");
 
+                }
+
+                //BONUS
+                else if (input == "7")
+                {
+                    // ELEVAMENTO A POTENZA
+                    Console.WriteLine();
+                    Console.WriteLine("ELEVAMENTO A POTENZA");
+                    Console.WriteLine("Inserisci la base: ");
+                    int _base = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Inserisci l'esponente: ");
+                    int esponente = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine($"Il risultato dell'elevamento a potenza è: {CalcoliHelper.Potenza(_base, esponente)}");
                 }
                 else
                 {

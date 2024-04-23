@@ -1,5 +1,9 @@
 ﻿namespace csharp_calcolatrice
 {
+
+    //Il fatto di dover scrivere lo stesso metodo per tipi di parametro diversi applica nella pratica uno dei principi di programmazione ad oggetti che abbiamo visto oggi…Quale?
+    //Il polimorfismo = ovvero un metodo può ridefinire i vari parametri ereditati dalla superclasse per cambiarne logica e riadattarli al contesto.
+
     internal static class CalcoliHelper
     {
 
@@ -112,9 +116,33 @@
             }
         }
 
-        //public static int ElevamentoAPotenza(int base, double esponente)
-        //{
-            //return esponente * 2;
-        //}
+
+        //BONUS
+        public static int Potenza(int _base, int esponente)
+        {
+            if (esponente == 0)
+            {
+                // tutti i numero elevato alla potenza 0 è 1, ritorneranno 1
+                return 1;
+            }
+            else if (esponente < 0)
+            {
+                // se l'esponente è negativo, invertiamo la base e cambiamo il segno dell'esponente
+                _base = 1 / _base;
+                esponente = -esponente;
+            }
+
+            int risultato = 1;
+            for (int i = 0; i < esponente; i++)
+            {
+                risultato *= _base;
+                if (risultato == 0)
+                {
+                    // se il risultato è 0, uscirà comunque 1
+                    return 1;
+                }
+            }
+            return risultato;
+        }
     }
 }
