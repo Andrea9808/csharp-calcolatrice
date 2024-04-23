@@ -111,5 +111,10 @@
                 return numero_due;
             }
         }
+
+        //public static int ElevamentoAPotenza(int base, double esponente)
+        //{
+            //return esponente * 2;
+        //}
     }
 }
