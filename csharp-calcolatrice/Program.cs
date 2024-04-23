@@ -106,26 +106,16 @@
                     // VALORE ASSOLUTO INTERO
                     Console.WriteLine();
                     Console.WriteLine("VALORE ASSOLUTO INTERO");
-                    Console.WriteLine("Inserisci il primo numero intero: ");
-                    int numero_uno_int = Convert.ToInt32(Console.ReadLine());
-
-                    Console.WriteLine("Inserisci il secondo numero intero: ");
-                    int numero_due_int = Convert.ToInt32(Console.ReadLine());
-
-                    Console.WriteLine($"Il valore assoluto del maggiore tra {numero_uno_int} e {numero_due_int} è: {CalcoliHelper.ValoreAssoluto(numero_uno_int, numero_due_int)}");
-
-
+                    Console.WriteLine("Inserisci un numero intero: ");
+                    int numero_int = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine($"Il valore assoluto di {numero_int} è: {CalcoliHelper.ValoreAssoluto(numero_int)}");
 
                     // VALORE ASSOLUTO DOUBLE
                     Console.WriteLine();
                     Console.WriteLine("VALORE ASSOLUTO DOUBLE");
-                    Console.WriteLine("Inserisci il primo numero double: ");
-                    double numero_uno_double = Convert.ToDouble(Console.ReadLine());
-
-                    Console.WriteLine("Inserisci il secondo numero double: ");
-                    double numero_due_double = Convert.ToDouble(Console.ReadLine());
-
-                    Console.WriteLine($"Il valore assoluto del maggiore tra {numero_uno_double} e {numero_due_double} è: {CalcoliHelper.ValoreAssoluto(numero_uno_double, numero_due_double)}");
+                    Console.WriteLine("Inserisci un numero double: ");
+                    double numero_double = Convert.ToDouble(Console.ReadLine());
+                    Console.WriteLine($"Il valore assoluto di {numero_double} è: {CalcoliHelper.ValoreAssoluto(numero_double)}");
 
                 }
                 else if (input == "5")
@@ -153,8 +143,6 @@
                     double numero_due_double = Convert.ToDouble(Console.ReadLine());
 
                     Console.WriteLine($"Il minimo tra {numero_uno_double} e {numero_due_double} è: {CalcoliHelper.Minimo(numero_uno_double, numero_due_double)}");
-
-
 
                 }
                 else if (input == "6")

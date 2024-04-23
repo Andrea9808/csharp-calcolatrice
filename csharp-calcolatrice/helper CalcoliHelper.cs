@@ -40,28 +40,28 @@
             return numero_uno * numero_due;
         }
 
-        //VALORE INT E DOUBLE
-        public static int ValoreAssoluto(int numero_uno, int numero_due)
+        //VALORE ASSOLUTO INT E DOUBLE
+        public static int ValoreAssoluto(int numero)
         {
-            if (numero_uno >= 0) 
+            if (numero >= 0) 
             {
-                return numero_uno;
+                return numero;
             }
             else
             {
-                return -numero_due;
+                return -numero;
             }
         }
 
-        public static double ValoreAssoluto(double numero_uno, double numero_due)
+        public static double ValoreAssoluto(double numero)
         {
-            if (numero_uno >= 0)
+            if (numero >= 0)
             {
-                return numero_uno;
+                return numero;
             }
             else
             {
-                return -numero_due;
+                return -numero;
             }
         }
 
